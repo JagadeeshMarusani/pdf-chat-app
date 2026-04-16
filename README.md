@@ -36,8 +36,8 @@ User Question → Retrieve top-5 chunks (MMR) → GPT-4o-mini → Answer + Citat
 
 **RecursiveCharacterTextSplitter** splits on `\n\n → \n → . → space` in order,
 so paragraph boundaries are respected before falling back to sentence/word splits.
-- **chunk_size=800**: small enough for precise retrieval, large enough for context.
-- **chunk_overlap=150**: preserves sentence context across chunk boundaries.
+- **chunk_size=250**: small enough for precise retrieval, large enough for context.
+- **chunk_overlap=25**: preserves sentence context across chunk boundaries.
 
 ## Retrieval Strategy
 
