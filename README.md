@@ -11,11 +11,7 @@ cd pdf_chat_app
 # 2. Install dependencies
 pip install -r requirements.txt
 
-# 3. Set your OpenAI API key
-cp .env.example .env
-# Edit .env and add your key: OPENAI_API_KEY=sk-...
-
-# 4. Run
+# 3. Run
 streamlit run app.py
 ```
 
@@ -31,7 +27,7 @@ User Question → Retrieve top-5 chunks (MMR) → GPT-4o-mini → Answer + Citat
 
 | Component   | Choice                          | Detail                          |
 |-------------|----------------------------------|----------------------------------|
-| Embedding   | `text-embedding-ada-002` (OpenAI) | 1536 dimensions                 |
+| Embedding   | `openai/text-embedding-3-small`  | 1536 dimensions                 |
 | LLM         | `gpt-4o-mini`                   | Fast, cost-effective             |
 | Vector DB   | ChromaDB (local)                | Persisted at `./storage/`        |
 | Chunking    | RecursiveCharacterTextSplitter  | 800 chars, 150 overlap           |

@@ -10,7 +10,7 @@ def chunk_text(pages: list[dict]) -> list[dict]:
     Returns list of dicts: [{"text": str, "page": int}, ...]
     """
     splitter = RecursiveCharacterTextSplitter(
-        chunk_size=800,
+        chunk_size=1500,
         chunk_overlap=150,
         separators=["\n\n", "\n", ". ", " ", ""],
     )
