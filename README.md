@@ -30,7 +30,7 @@ User Question → Retrieve top-5 chunks (MMR) → GPT-4o-mini → Answer + Citat
 | Embedding   | `openai/text-embedding-3-small`  | 1536 dimensions                 |
 | LLM         | `gpt-4o-mini`                   | Fast, cost-effective             |
 | Vector DB   | ChromaDB (local)                | Persisted at `./storage/`        |
-| Chunking    | RecursiveCharacterTextSplitter  | 800 chars, 150 overlap           |
+| Chunking    | RecursiveCharacterTextSplitter  | 1500 chars, 150 overlap           |
 
 ## Chunking Strategy
 
